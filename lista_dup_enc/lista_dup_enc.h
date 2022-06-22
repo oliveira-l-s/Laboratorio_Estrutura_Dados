@@ -1,0 +1,27 @@
+#ifndef LISTA_DUP_ENC
+#define LISTA_DUP_ENC
+
+typedef struct no no;   // célula
+
+typedef struct lista lista;
+
+int busca_seq_lst(lista* l, int valor, int* pos);
+
+lista* criar_lst();
+
+int esta_vazia_lst(lista* l);
+void exibir_lst(lista* l);
+
+int inserir_fim_lst(lista* l, int valor);
+int inserir_meio_lst(lista* l, int valor, int k);
+int inserir_inicio_lst(lista* l, int valor);
+
+void liberar_lst(lista** l);
+
+int remover_fim_lst(lista* l, int* valor);
+int remover_inicio_lst(lista* l, int* valor);
+int remover_meio_lst(lista* l, int* valor, int k);
+
+int tamanho_lst(lista* l);
+
+#endif  // LISTA_DUP_ENC
